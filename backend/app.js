@@ -19,7 +19,7 @@ app.get("/message",(req,res)=>{
 // connections
 mongoose
   .connect(
-    `mongodb://admin:${process.env.MONGODB_PASSWORD}@ac-stqe5w0-shard-00-00.cgigyym.mongodb.net:27017,ac-stqe5w0-shard-00-01.cgigyym.mongodb.net:27017,ac-stqe5w0-shard-00-02.cgigyym.mongodb.net:27017/?ssl=true&replicaSet=atlas-pzglvr-shard-0&authSource=admin&retryWrites=true&w=majority`
+    `mongodb://admin:gopinath2002@ac-stqe5w0-shard-00-00.cgigyym.mongodb.net:27017,ac-stqe5w0-shard-00-01.cgigyym.mongodb.net:27017,ac-stqe5w0-shard-00-02.cgigyym.mongodb.net:27017/?ssl=true&replicaSet=atlas-pzglvr-shard-0&authSource=admin&retryWrites=true&w=majority`
   )
   .then(() =>
     app.listen(5000, () =>
